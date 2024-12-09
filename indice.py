@@ -43,7 +43,7 @@ if uploaded_file:
     st_map = st_folium(mapa, width=700, height=500)
 
     # Parámetro de interpolación
-    paso = 0.0001
+    paso = 0.00001
     cordx = np.arange(data["Longitud"].min(), data["Longitud"].max(), paso)
     cordy = np.arange(data["Latitud"].min(), data["Latitud"].max(), paso)
     xx, yy = np.meshgrid(cordx, cordy)
